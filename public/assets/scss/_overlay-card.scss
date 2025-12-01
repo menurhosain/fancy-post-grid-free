@@ -1,0 +1,232 @@
+/*----------------------------------------*/
+/*  4.12 overlay card css
+/*----------------------------------------*/
+
+.fpg-post-overlay {
+    &-one {
+        position: relative;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        &:hover {
+            .fpg-post-overlay-bg-thumb {
+                transform: scale3d(1.1, 1.1, 1);
+            }
+        }
+        .fpg-post-overlay-bg-thumb {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            transform: scale(1.02);
+            transition: all 1.5s ease-out;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(18, 18, 19, 0) 18.83%, #121213 91.88%);
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .fpg-post-overlay-title {
+            margin-top: 15px;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+
+            &.is-white {
+                color: var(--rs-white);
+            }
+        }
+        .fpg-post-overlay-content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding: 40px 80px 35px 40px;
+        }
+    }
+    &-two {
+        position: relative;
+        height: 460px;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        &:hover {
+            .fpg-post-overlay-bg-thumb {
+                transform: scale3d(1.1, 1.1, 1);
+            }
+        }
+        .fpg-post-overlay-bg-thumb {
+            position: absolute;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            transform: scale(1.02);
+            transition: all 1.5s ease-out;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(18, 18, 19, 0) 18.83%, #121213 91.88%);
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .fpg-post-overlay-title {
+            margin-top: 15px;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+
+            &.is-white {
+                color: var(--rs-white);
+            }
+        }
+        .fpg-post-overlay-content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding: 40px 80px 35px 40px;
+        }
+    }
+    &-three {
+        position: relative;
+        height: 460px;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        &:hover {
+            .fpg-post-overlay-bg-thumb {
+                transform: scale3d(1.1, 1.1, 1);
+            }
+        }
+        .fpg-post-overlay-bg-thumb {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            transform: scale(1.02);
+            transition: all 1.5s ease-out;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(18, 18, 19, 0) 18.83%, #121213 91.88%);
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .fpg-post-overlay-title {
+            margin-top: 15px;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+
+            &.is-white {
+                color: var(--rs-white);
+            }
+        }
+        .fpg-post-overlay-content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding: 40px 40px 35px 40px;
+        }
+    }
+    &-four {
+        position: relative;
+        height: 500px;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        &:hover {
+            .fpg-post-overlay-bg-thumb {
+                transform: scale3d(1.1, 1.1, 1);
+            }
+        }
+        .fpg-post-overlay-bg-thumb {
+            position: absolute;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            transform: scale(1.02);
+            transition: all 1.5s ease-out;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(18, 18, 19, 0) 18.83%, #121213 91.88%);
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .fpg-post-overlay-title {
+            margin-top: 15px;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+
+            &.is-white {
+                color: var(--rs-white);
+            }
+        }
+        .fpg-post-overlay-content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding: 40px 40px 35px 40px;
+        }
+    }
+}

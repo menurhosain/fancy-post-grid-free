@@ -1,0 +1,68 @@
+// Grid Layout
+.fpg-post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.fpg-post-filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+}
+
+// Group Layout
+.fpg-post-group {
+    &-one {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(var(--total-post), 1fr);
+        gap: 30px;
+
+        .fpg-card-style {
+            min-width: 0;
+            grid-column: 9 / 13;
+
+            &:nth-child(4n+1) {
+                grid-column: 1 / 9;
+                grid-row: span 3;
+            }
+        }
+    }
+    &-two {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 30px;
+        .fpg-card-style {
+            min-width: 0;
+            grid-column: span 4;
+            &:first-child {
+                grid-column: span 8;
+            }
+            &:nth-child(2) {
+                grid-column: span 4;
+            }
+
+        }
+    }
+    &-three {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &-four {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        .fpg-card-style {
+            &:first-child {
+                grid-row: span 3;
+            }
+            &:nth-child(8) {
+                border-top: none !important;
+            }
+        }
+    }
+}

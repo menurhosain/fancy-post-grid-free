@@ -1,0 +1,121 @@
+/*----------------------------------------*/
+/*  4.24 medium card css
+/*----------------------------------------*/
+
+.fpg-post-medium {
+    &-one {
+        .fpg-post-medium-item {
+            position: relative;
+            display: flex;
+            gap: 30px;
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--rs-border-primary);
+            &:hover {
+                .fpg-post-medium-thumb {
+                    img {
+                        transform: scale3d(1.1, 1.1, 1);
+                    }
+                }
+            }
+            &:first-child {
+                border-top: 1px solid var(--rs-border-primary);
+                padding-top: 12px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .fpg-post-medium-thumb {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            a {
+                display: block;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                transform: scale(1.02);
+                transition: all 0.8s ease;
+                height: 100%;
+            }
+        }
+        .fpg-post-medium-content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .fpg-post-description {
+            margin-bottom: 30px;
+        }
+        .fpg-post-medium-title {
+            margin-top: 12px;
+            margin-bottom: 8px;
+            text-transform: capitalize;
+            max-width: 400px;
+            a {
+                background-size: 0 1px;
+                &:hover {
+                    background-size: 100% 1px;
+                }
+            }
+        }
+    }
+    &-two {
+        .fpg-post-medium-item {
+            position: relative;
+            border: 1px solid var(--rs-border-primary);
+            padding: 12px 12px 30px 12px;
+            border-radius: 8px;
+            &:hover {
+                .fpg-post-medium-thumb {
+                    img {
+                        transform: scale3d(1.1, 1.1, 1);
+                    }
+                }
+            }
+        }
+        .fpg-post-medium-thumb {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            // a {
+            //     display: block;
+            // }
+            img {
+                width: 100%;
+                object-fit: cover;
+                transform: scale(1.02);
+                transition: all 0.8s ease;
+            }
+        }
+        .fpg-post-medium-content {
+            padding-top: 25px;
+            padding-inline-start: 15px;
+        }
+        .fpg-post-medium-title {
+            margin-top: 12px;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            max-width: 400px;
+            a {
+                background-size: 0 1px;
+                &:hover {
+                    background-size: 100% 1px;
+                }
+            }
+        }
+        .fpg-play-btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
