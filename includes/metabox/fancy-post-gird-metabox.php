@@ -23,7 +23,7 @@ class Fancy_Post_Grid_MetaBox {
         add_meta_box(
             'fpg_metabox_shortcode',
             esc_html__( 'Shortcode Generator', 'fancy-post-grid' ),
-            [$this, 'fancy_post_grid_metabox_shortcode_callback'], // FIXED
+            [$this, 'fancy_post_grid_metabox_shortcode_callback'], 
             'fancy-post-grid-fpg',
             'normal',
             'high'
