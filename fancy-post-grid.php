@@ -55,15 +55,19 @@ function fancy_post_grid_initialize_plugin() {
          * Include file for admin
          */
         
-        include_once FANCY_POST_GRID_PATH . 'includes/ajax_config.php';
-        include_once FANCY_POST_GRID_PATH . 'includes/shortcode_generate.php';
-        include_once FANCY_POST_GRID_PATH . 'includes/metabox/fancy-post-gird-metabox.php';
+        
+        
         
     } else {
         
     }
     
 }
+include_once FANCY_POST_GRID_PATH . 'includes/shortcode_generate.php';
+        include_once FANCY_POST_GRID_PATH . 'includes/metabox/fancy-post-gird-metabox.php';
+        
+include_once FANCY_POST_GRID_PATH . 'includes/ajax_config.php';
+
 include_once FANCY_POST_GRID_PATH . 'includes/template.php';
 new FPG_Template();
 // Gutenberg Widget

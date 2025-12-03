@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 } // Exit if accessed directly
 
 /*=====================================================================
-	// Fancy Post Grid ShortCode
+	// Fancy Post Grid Template
 =======================================================================*/
 /**
  * 
