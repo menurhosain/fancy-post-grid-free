@@ -47,26 +47,32 @@ function fancy_post_grid_initialize_plugin() {
      * Include styles and scripts for admin part
      */
     include_once FANCY_POST_GRID_PATH . 'admin/fpg-admin.php';
-    include_once FANCY_POST_GRID_PATH . 'includes/shortcode_generate.php';
-    include_once FANCY_POST_GRID_PATH . 'includes/metabox/fancy-post-gird-metabox.php';
+
+    // Check if the Pro version is active
+    if ( ! is_plugin_active( 'fancy-post-grid-pro/fancy-post-grid-pro.php' ) ) {
+        
+        include_once FANCY_POST_GRID_PATH . 'includes/shortcode_generate.php';
+        include_once FANCY_POST_GRID_PATH . 'includes/metabox/fancy-post-gird-metabox.php';
+        include_once FANCY_POST_GRID_PATH . 'includes/template.php';
+        new FPG_Template();
+        
+    } else {
+        
+    }
 
     include_once FANCY_POST_GRID_PATH . 'includes/ajax_config.php';
-
-    include_once FANCY_POST_GRID_PATH . 'includes/template.php';
-    new FPG_Template();
     // Gutenberg Widget
     include_once FANCY_POST_GRID_PATH . 'includes/Gutenberg/gutenberg-init.php';
     new FPG_Blocks_Free();
 
     include_once FANCY_POST_GRID_PATH . 'admin/submenu/admin-submenu.php';
     
-    
+    if (did_action( 'elementor/loaded' )) {
+        include_once  FANCY_POST_GRID_PATH.'includes/ElementBlock/elementor_widgets.php';
+    }
 }
-
 add_action( 'plugins_loaded', 'fancy_post_grid_initialize_plugin' );
-if (did_action( 'elementor/loaded' )) {
-    include_once  FANCY_POST_GRID_PATH.'includes/ElementBlock/elementor_widgets.php';
-}
+
 /**
  * Redirect to settings page after plugin activate
  *
