@@ -5,7 +5,7 @@ if ($fancy_post_pagination === 'off') {
     $fpg_post_per_page = -1;
 }  
 // Set a maximum limit for posts_per_page
-$max_posts_per_page = 3;
+$max_posts_per_page = 4;
 
 // Check if the dynamic value exceeds the maximum limit
 if ($fpg_post_per_page > $max_posts_per_page || $fpg_post_per_page = -1) {
