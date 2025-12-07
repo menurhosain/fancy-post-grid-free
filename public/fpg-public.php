@@ -33,7 +33,7 @@ function fancy_post_grid_public_scripts(){
     // Enqueue the necessary scripts
     wp_enqueue_script('jquery');
     wp_enqueue_script('swiper');
-    wp_enqueue_script('rs-swiper', plugins_url('/assets/js/swiper-bundle.min.js', __FILE__), array('jquery'), $ufpg_version, true);
+    wp_enqueue_script('fpg-swiper-bundle', plugins_url('/assets/js/swiper-bundle.min.js', __FILE__), array('jquery'), $ufpg_version, true);
     wp_enqueue_script('fpg-bootstrap-main', plugins_url('/assets/js/bootstrap.bundle.min.js', __FILE__), array( 'jquery'), $ufpg_version, true);
     wp_enqueue_script( 'isotope', plugins_url('/assets/js/isotope.pkgd.min.js', __FILE__) , array('jquery','imagesloaded'), $ufpg_version, true );
     wp_enqueue_script( 'magnific', plugins_url('/assets/js/magnific-popup.min.js', __FILE__) , array('jquery','imagesloaded'), $ufpg_version, true );

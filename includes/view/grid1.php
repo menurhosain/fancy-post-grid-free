@@ -8,15 +8,13 @@ ob_start();
         <div class="row">
 
             <?php
-            // Load query builder
-            $dir = plugin_dir_path(__FILE__);
-            require $dir . 'common-query-grid.php';
-            ?>
+                // Load query builder
+                $dir = plugin_dir_path(__FILE__);
+                require $dir . 'common-query-grid.php';
+                if ($query->have_posts()) : 
 
-            <?php if ($query->have_posts()) : ?>
-                <?php while ($query->have_posts()) : $query->the_post(); ?>
+                while ($query->have_posts()) : $query->the_post(); 
 
-                    <?php
                     // Build column classes
                     $main_cl_lg = empty($fancy_post_cl_lg) ? 'col-lg-4' : 'col-lg-' . $fancy_post_cl_lg;
                     $main_cl_md = empty($fancy_post_cl_md) ? 'col-md-4' : 'col-md-' . $fancy_post_cl_md;
@@ -144,9 +142,11 @@ ob_start();
                         </div>
                     </div>
 
-                <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>
-            <?php endif; ?>
+                <?php 
+                    endwhile; 
+                    wp_reset_postdata(); 
+                    endif; 
+                ?>
 
         </div>
 
